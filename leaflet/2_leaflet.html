@@ -8,16 +8,16 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <style>
         body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+        #map { position:absolute; top:0; bottom:0; width:50%; }
     </style>
 </head>
 <body>
 
 <style>
-#map {
+/*#map {
     position: fixed;
     width:50%;
-}
+}*/
 #features {
     width: 50%;
     margin-left: 50%;
@@ -50,6 +50,10 @@ section:last-child {
     <section id='boyleheights'>
         <h3>The neighborhood of Boyle Heights</h3>
         <p>Let's head down to the nieghborhood of Boyle Heights</p>
+    </section>
+    <section id='PicoUnion'>
+        <h3>The neighborhood of Pico Union</h3>
+        <p>Let's head down to the neighborhood of Pico Union</p>
     </section>
     <section id='centralave'>
         <h3>Down Central Ave</h3>
@@ -105,6 +109,10 @@ var chapters = {
     'boyleheights': {
         center: [34.0323, -118.2120],
         zoom: 13,
+    },
+    'PicoUnion': {
+        center: [34.05289053741227, -118.28078269958498],
+        zoom: 13,   
     },
     'centralave': {
         center: [34.00672273556911, -118.25617347611393],
